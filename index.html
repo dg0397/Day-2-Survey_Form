@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Survey Form </title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" media="screen" href="style.css" />
+    <script src="main.js"></script>
+</head>
+<body>
+    <div class="container">
+        <h1 id="title">Survey Form For #100DaysOfCode</h1>
+        <div class="description">
+          <p>Let us know how you are doing in #100DaysOfCode</p>
+        </div>
+        <form action="" id="survey-form">
+            <div class="container__content">
+                <div class="container__label">
+                    <label for="name" class="title__input" id="name-label">-Name</label>
+                </div>
+                <div class="container__input">
+                    <input name="name" type="text" id="name" placeholder="Enter Your Name" autofocus required>
+                </div>
+            </div>
+            <div class="container__content">
+                <div class="container__label">
+                    <label for="email" class="title__input" id="email-label">-Email</label>
+                </div>
+                <div class="container__input">
+                    <input name="email" type="email" id="email" placeholder="Enter Your Email" required>
+                </div>
+            </div>
+            <div class="container__content">
+                <div class="container__label">
+                    <label for="number" class="title__input" id="number-label">-Age</label>
+                </div>
+                <div class="container__input">
+                    <input name="age" type="number" max="100" min="10" id="number" placeholder="Enter Your Age"  required>
+                </div>
+            </div>
+            <div class="container__content">
+                 <div class="container__label">
+                    <label for="country" class="title__input" id="country-label">-Country</label>
+                </div>
+                <div class="container__input">
+                    <select name="country" type="text"  id="country" placeholder="Select Your Country"  required>
+                        <option value="#">Select Your Country</option>
+                        <option value="#">#</option>
+                        <option value="#">#</option>
+                        <option value="#">#</option>
+                        <option value="#">#</option>
+                    </select>
+                </div>
+            </div>
+            <div class="container__content">
+                <div class="container__label">
+                    <label for="range" class="title__input">-How many days do you have with the challenge</label>
+                </div>
+                <div class="container__input">
+                    <input name="number-code" type="number" min="1" max="100" id="number" placeholder="Enter a number"  required>
+                </div>
+            </div>
+            <div class="container__content">
+                <div class="container__label">
+                    <label for="text-editor" class="title__input">-What is your favorite Text-Editor</label>
+                </div>
+                <div class="container__input">
+                    <ul name="radio-buttons" >
+				          <li class="radio" name="radio-buttons"> 
+				            <input name="radio-buttons" type="radio" value="1" > Notepad++
+					          
+				            </li>
+				          <li class="radio" name="radio-buttons">
+				            <input name="radio-buttons" type="radio" value="2"> Sublime Text
+					          
+				          </li>
+				          <li class="radio" name="radio-buttons">
+				            <input name="radio-buttons" type="radio" value="3"> Atom
+					          
+                          </li>
+                          <li class="radio" name="radio-buttons">
+                            <input name="radio-buttons" type="radio" value="4"> Visual Studio Code
+                                  
+                        </li>
+                        <li class="radio" name="radio-buttons">
+                                <input name="radio-buttons" type="radio" value="5"> Brackets
+                                      
+                        </li>
+                        <li class="radio" name="radio-buttons">
+                                <input name="radio-buttons" type="radio" value="6"> Vim
+                                      
+                        </li>
+                        <li class="radio" name="radio-buttons">
+                                <input name="radio-buttons" type="radio" value="7"> Emacs
+                                      
+                        </li>
+                    </ul> 
+                </div>
+            </div>
+            <div class="container__content">
+                    <div class="container__label">
+                        <label for="checkboxes-buttons" class="title__input" >Which programming languages have you learned in this time?</label>
+                    </div>
+                    <div class="container__input">
+                        <ul name="checkboxes-buttons"> 
+                            <li class="checkboxes" name="checkboxes-buttons">
+                                 <input name="checkboxes-buttons" type="checkbox" value="1"> JavaScript
+                               
+                            </li>
+                            <li class="checkboxes" name="checkboxes-buttons">
+                                  <input name="checkboxes-buttons" type="checkbox" value="2"> PHP
+                                
+                            </li>
+                            <li class="checkboxes" name="checkboxes-buttons">
+                                 <input name="checkboxes-buttons" type="checkbox" value="3"> Python
+                            </li>
+                            <li class="checkboxes" name="checkboxes-buttons">
+                                 <input name="checkboxes-buttons" type="checkbox" value="4"> Java
+                            </li>
+                            <li class="checkboxes" name="checkboxes-buttons">
+                                 <input name="checkboxes-buttons" type="checkbox" value="5"> C++
+                            </li>
+                            <li class="checkboxes" name="checkboxes-buttons">
+                                 <input name="checkboxes-buttons" type="checkbox" value="6"> C
+                            </li>
+                            <li class="checkboxes" name="checkboxes-buttons">
+                                 <input name="checkboxes-buttons" type="checkbox" value="7"> Swift
+                            </li>
+                            <li class="checkboxes" name="checkboxes-buttons">
+                                    <input name="checkboxes-buttons" type="checkbox" value="7"> Ruby
+                            </li>
+                        </ul>
+                    </div>					  
+                </div>
+                <div class="container__content">
+                        <div class="container__label">
+                            <label for="number-day" class="title__input" id="number-label-day">-What has been the most difficult day and Why?</label>
+                        </div>
+                        <div class="container__input">
+                            <input name="age" type="number" min="1" max="100" id="number" placeholder="Day"  required>
+                        </div>
+                </div>
+                <div class="container__content" id="container__text">
+                <div class="container__input text__area">
+                <textarea name="text-area" id="text-area" cols="30" rows="10" placeholder="Explain why"></textarea>
+                </div>
+                </div>
+                <div class="container__content" id="container__btn">
+                        <div class="container__input btn__buttom">
+                <input type="button" id="btn" value="Submit">
+                </div>
+                </div>
+        </form>
+    </div>
+</body>
+</html>
